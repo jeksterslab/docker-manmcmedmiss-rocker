@@ -36,7 +36,7 @@ RUN wget https://www.statmodel.com/download/install_mpluslinux_demo64.bin \
     && rm -rf install_mpluslinux_demo64.bin
 
 # manMCMedMiss
-ADD manMCMedMiss_0.9.1.tar.gz /usr/src/local
+ADD manMCMedMiss_0.9.2.tar.gz /usr/src/local
 RUN R CMD INSTALL /usr/src/local/manMCMedMiss \
     && rm -rf /usr/src/local/manMCMedMiss
 
@@ -44,5 +44,5 @@ RUN R CMD INSTALL /usr/src/local/manMCMedMiss \
 MAINTAINER "Ivan Jacob Agaloos Pesigan <r.jeksterslab@gmail.com>"
 
 # extra metadata
-LABEL version="0.9.1"
-LABEL description="manMCMedMiss_0.9.1 rocker/verse container."
+LABEL version="0.9.2"
+LABEL description="manMCMedMiss_0.9.2 rocker/verse container."
