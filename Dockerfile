@@ -25,10 +25,6 @@ RUN apt-get update \
     wget parallel \
     && rm -rf /var/lib/apt/lists/*
 
-# tinytex
-RUN Rscript -e "tinytex::install_tinytex(bundle = 'TinyTeX-2', force = TRUE)"
-ENV PATH="${HOME}/.TinyTeX/bin/x86_64-linux/:${PATH}"
-
 # mplus demo
 RUN wget https://www.statmodel.com/download/install_mpluslinux_demo64.bin \
     && sh install_mpluslinux_demo64.bin -i silent \
