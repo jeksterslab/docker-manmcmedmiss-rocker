@@ -1,5 +1,5 @@
-jeksterslab/manmcmedmiss-rocker
-===============================
+docker-manmcmedmiss-rocker
+==========================
 Ivan Jacob Agaloos Pesigan
 
 ## Description
