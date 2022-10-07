@@ -2,6 +2,10 @@ docker-manmcmedmiss-rocker
 ==========================
 Ivan Jacob Agaloos Pesigan
 
+<!-- badges: start -->
+[![Docker Image CI](https://github.com/jeksterslab/docker-manmcmedmiss-rocker/actions/workflows/docker.yaml/badge.svg)](https://github.com/jeksterslab/docker-manmcmedmiss-rocker/actions/workflows/docker.yaml)
+<!-- badges: end -->
+
 ## Description
 
 A `rocker/rstudio` container for the `manMCMedMiss` project.
