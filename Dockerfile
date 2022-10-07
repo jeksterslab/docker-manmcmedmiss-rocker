@@ -4,8 +4,10 @@ RUN install2.r --error \
   devtools \
   ggplot2 \
   knitr \
+  lavaan \
   lintr \
   microbenchmark \
+  party \
   pkgdown \
   remotes \
   rhub \
@@ -16,7 +18,6 @@ RUN install2.r --error \
   tidyverse \
   tinytex \
   mice \
-  norm2 \
   DT
 
 # wget and parallel
