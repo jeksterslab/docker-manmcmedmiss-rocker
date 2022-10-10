@@ -28,7 +28,7 @@ To launch `Rstudio Server`, run the following.
 docker run --rm -ti -e PASSWORD=yourpassword -p 8787:8787 manmcmedmiss-rocker
 ```
 
-Open `https://localhost:8787` on your web browser to launch `Rstudio Server`.
+Open `http://localhost:8787` on your web browser to launch `Rstudio Server`.
 
 - username: rstudio
 - password: yourpassword
