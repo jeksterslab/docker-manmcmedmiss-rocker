@@ -1,35 +1,36 @@
 FROM rocker/verse
+
 RUN install2.r --error \
-  covr \
-  devtools \
-  ggplot2 \
-  knitr \
-  lavaan \
-  lintr \
-  microbenchmark \
-  party \
-  pkgdown \
-  remotes \
-  rhub \
-  rmarkdown \
-  rprojroot \
-  styler \
-  testthat \
-  tidyverse \
-  tinytex \
-  mice \
+  covr                 \
+  devtools             \
+  ggplot2              \
+  knitr                \
+  lavaan               \
+  lintr                \
+  microbenchmark       \
+  party                \
+  pkgdown              \
+  remotes              \
+  rhub                 \
+  rmarkdown            \
+  rprojroot            \
+  styler               \
+  testthat             \
+  tidyverse            \
+  tinytex              \
+  mice                 \
   DT
 
 # wget and parallel
-RUN apt-get update \
+RUN apt-get update                                \
     && apt-get install -y --no-install-recommends \
-    wget parallel \
+    wget parallel                                 \
     && rm -rf /var/lib/apt/lists/*
 
 # mplus demo
 RUN wget https://www.statmodel.com/download/install_mpluslinux_demo64.bin \
-    && sh install_mpluslinux_demo64.bin -i silent \
-    && ln -s /opt/mplusdemo/mpdemo /usr/local/bin/ \
+    && sh install_mpluslinux_demo64.bin -i silent                         \
+    && ln -s /opt/mplusdemo/mpdemo /usr/local/bin/                        \
     && rm -rf install_mpluslinux_demo64.bin
 
 # manMCMedMiss
