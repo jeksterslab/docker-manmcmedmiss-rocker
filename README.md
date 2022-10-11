@@ -3,7 +3,7 @@ docker-manmcmedmiss-rocker
 Ivan Jacob Agaloos Pesigan
 
 <!-- badges: start -->
-[![Docker Image CI](https://github.com/jeksterslab/docker-manmcmedmiss-rocker/actions/workflows/docker.yaml/badge.svg)](https://github.com/jeksterslab/docker-manmcmedmiss-rocker/actions/workflows/docker.yaml)
+[![Docker Build](https://github.com/jeksterslab/docker-manmcmedmiss-rocker/actions/workflows/docker-build.yml/badge.svg)](https://github.com/jeksterslab/docker-manmcmedmiss-rocker/actions/workflows/docker-build.yml)
 <!-- badges: end -->
 
 ## Description
