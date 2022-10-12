@@ -19,7 +19,10 @@ RUN install2.r --error \
   tidyverse            \
   tinytex              \
   mice                 \
-  DT
+  DT                   \
+  semmcci
+
+RUN R -e "remotes::install_github('jeksterslab/semmcci')"
 
 # wget and parallel
 RUN apt-get update                                \
