@@ -17,7 +17,7 @@ To build the container, run the following.
 ```bash
 git clone https://github.com/jeksterslab/docker-manmcmedmiss-rocker.git
 cd docker-manmcmedmiss-rocker
-sudo docker build -t manmcmedmiss-rocker .
+docker build -t manmcmedmiss-rocker .
 ```
 
 ## Run
