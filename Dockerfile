@@ -24,6 +24,24 @@ RUN install2.r --error \
 
 RUN R -e "remotes::install_github('jeksterslab/semmcci')"
 
+RUN R -e "remotes::install_version(                           \
+      package = 'MASS',                                       \
+      version = '7.3-58.1',                                   \
+      repos = 'https://packagemanager.rstudio.com/all/latest' \
+    )"
+
+RUN R -e "remotes::install_version(                           \
+      package = 'mice',                                       \
+      version = '3.14.0',                                     \
+      repos = 'https://packagemanager.rstudio.com/all/latest' \
+    )"
+
+RUN R -e "remotes::install_version(                           \
+      package = 'party',                                      \
+      version = '1.3-10',                                     \
+      repos = 'https://packagemanager.rstudio.com/all/latest' \
+    )"
+
 # wget and parallel
 RUN apt-get update                                \
     && apt-get install -y --no-install-recommends \
