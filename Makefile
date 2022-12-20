@@ -1,7 +1,7 @@
 .PHONY: all term clean
 
 all:
-	docker build -t manmcmedmiss-rocker .
+	sudo docker build -t manmcmedmiss-rocker .
 
 term:
 	@echo Building .bashrc and .vimrc...
