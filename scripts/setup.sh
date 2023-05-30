@@ -82,6 +82,10 @@ cd /home/${DEFAULT_USER}/project-dir
 echo "session-default-new-project-dir=/home/${DEFAULT_USER}/project-dir" >> /etc/rstudio/rsession.conf
 chown -R "${DEFAULT_USER}:${DEFAULT_USER}" "/home/${DEFAULT_USER}/project-dir"
 
+# manMCMedMiss
+R CMD INSTALL /usr/src/local/manMCMedMiss
+rm -rf /usr/src/local/manMCMedMiss
+
 # Clean up
 rm -rf /var/lib/apt/lists/*
 rm -rf /tmp/downloaded_packages

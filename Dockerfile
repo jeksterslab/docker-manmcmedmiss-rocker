@@ -1,14 +1,10 @@
 FROM rocker/verse
 
+ADD manMCMedMiss_0.9.2.tar.gz /usr/src/local
 COPY scripts/setup.sh /usr/src/local/setup.sh
 RUN chmod 777 /usr/src/local/setup.sh         && \
     ./usr/src/local/setup.sh                  && \
     rm -rf /usr/src/local/setup.sh
-
-# manMCMedMiss
-ADD manMCMedMiss_0.9.2.tar.gz /usr/src/local
-RUN R CMD INSTALL /usr/src/local/manMCMedMiss && \
-    rm -rf /usr/src/local/manMCMedMiss
 
 # author
 MAINTAINER "Ivan Jacob Agaloos Pesigan <r.jeksterslab@gmail.com>"
