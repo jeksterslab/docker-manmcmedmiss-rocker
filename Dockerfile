@@ -7,7 +7,7 @@ RUN chmod 777 /usr/src/local/setup.sh         && \
     rm -rf /usr/src/local/setup.sh
 
 # author
-MAINTAINER "Ivan Jacob Agaloos Pesigan <r.jeksterslab@gmail.com>"
+MAINTAINER "Ivan Jacob Agaloos Pesigan <learn.jeksterslab@gmail.com>"
 
 # extra metadata
 LABEL version="0.9.2"
