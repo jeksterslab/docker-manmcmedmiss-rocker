@@ -83,8 +83,7 @@ echo "session-default-new-project-dir=/home/${DEFAULT_USER}/project-dir" >> /etc
 chown -R "${DEFAULT_USER}:${DEFAULT_USER}" "/home/${DEFAULT_USER}/project-dir"
 
 # manMCMedMiss
-R CMD INSTALL /usr/src/local/manMCMedMiss
-rm -rf /usr/src/local/manMCMedMiss
+R CMD INSTALL /usr/src/local/src/manMCMedMiss_0.9.2.tar.gz
 
 # Clean up
 rm -rf /var/lib/apt/lists/*
