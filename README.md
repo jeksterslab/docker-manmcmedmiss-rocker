@@ -8,7 +8,7 @@ Ivan Jacob Agaloos Pesigan
 
 ## Description
 
-A `rocker/rstudio` container for the `manMCMedMiss` project.
+A Docker container for the [manMCMedMiss](https://github.com/jeksterslab/manMCMedMiss) project based on the [Rocker Project](https://rocker-project.org/).
 
 ## Build
 

@@ -1,7 +1,7 @@
 .PHONY: all term clean
 
 all:
-	sudo docker build -t manmcmedmiss-rocker .
+	@if (( $EUID != 0 )); then sudo docker build -t manmcmedmiss-rocker . ; else docker build -t manmcmedmiss-rocker . ; fi
 
 term:
 	@echo Building .bashrc and .vimrc...
