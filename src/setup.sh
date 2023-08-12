@@ -38,14 +38,8 @@ install2.r --error --skipinstalled -n "$NCPUS" \
     tidyverse            \
     tinytex              \
     mice                 \
-    DT                   \
-    semmcci
+    DT
 
-R -e "remotes::install_version(                             \
-    package = 'semmcci',                                    \
-    version = '1.1.2',                                      \
-    repos = 'https://packagemanager.rstudio.com/all/latest' \
-)"
 
 R -e "remotes::install_version(                             \
     package = 'MASS',                                       \
@@ -85,6 +79,9 @@ mkdir -p /home/${DEFAULT_USER}/project-dir
 cd /home/${DEFAULT_USER}/project-dir
 echo "session-default-new-project-dir=/home/${DEFAULT_USER}/project-dir" >> /etc/rstudio/rsession.conf
 chown -R "${DEFAULT_USER}:${DEFAULT_USER}" "/home/${DEFAULT_USER}/project-dir"
+
+# semmcci
+R CMD INSTALL /usr/src/local/src/semmcci_1.1.2.tar.gz
 
 # manMCMedMiss
 R CMD INSTALL /usr/src/local/src/manMCMedMiss_0.9.2.tar.gz
