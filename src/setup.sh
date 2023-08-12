@@ -41,7 +41,11 @@ install2.r --error --skipinstalled -n "$NCPUS" \
     DT                   \
     semmcci
 
-R -e "remotes::install_github('jeksterslab/semmcci')"
+R -e "remotes::install_version(                             \
+    package = 'semmcci',                                    \
+    version = '1.1.2',                                      \
+    repos = 'https://packagemanager.rstudio.com/all/latest' \
+)"
 
 R -e "remotes::install_version(                             \
     package = 'MASS',                                       \
