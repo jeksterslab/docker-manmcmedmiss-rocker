@@ -40,7 +40,6 @@ install2.r --error --skipinstalled -n "$NCPUS" \
     mice                 \
     DT
 
-
 R -e "remotes::install_version(                             \
     package = 'MASS',                                       \
     version = '7.3-58.1',                                   \
@@ -70,7 +69,7 @@ DEFAULT_USER=${DEFAULT_USER:-"rstudio"}
 ## working directory folder
 mkdir -p /home/${DEFAULT_USER}/working-dir
 cd /home/${DEFAULT_USER}/working-dir
-wget https://raw.githubusercontent.com/jeksterslab/template/main/project.Rproj
+wget https://raw.githubusercontent.com/ijapesigan/rProject/main/project.Rproj
 echo "session-default-working-dir=/home/${DEFAULT_USER}/working-dir" >> /etc/rstudio/rsession.conf
 chown -R "${DEFAULT_USER}:${DEFAULT_USER}" "/home/${DEFAULT_USER}/working-dir"
 
